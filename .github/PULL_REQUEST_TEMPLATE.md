@@ -7,4 +7,4 @@
 - Multitenancy data isolation has been implemented across these changes ([Multitenancy](https://en.wikipedia.org/wiki/Multitenancy))
 - Any web UI is escaping output to prevent XSS ([Encode and Escape data](https://owasp-top-10-proactive-controls-2018.readthedocs.io/en/latest/c4-encode-escape-data.html))
  
- [ ] This pull request fulfills all security requirements
+- [ ] This pull request fulfills all security requirements
