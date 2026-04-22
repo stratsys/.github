@@ -1,6 +1,4 @@
 {
   "name": "Bump Helm Chart Version",
-  "description": "Bumps the version and/or appVersion fields in a Helm chart's Chart.yaml and commits the change back to the branch.",
-  "iconName": "package",
-  "categories": ["CD", "Deployment", "Automation"]
+  "description": "Bumps the version and/or appVersion fields in a Helm chart's Chart.yaml and commits the change back to the branch."
 }

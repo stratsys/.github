@@ -1,0 +1,6 @@
+{
+  "name": "Hello World",
+  "description": "Minimal test template to verify workflow-template discovery.",
+  "iconName": "package",
+  "categories": ["Automation"]
+}
