@@ -1,0 +1,24 @@
+name: Bump Helm Chart Version
+
+# Bump type is derived automatically from the commit message, following the GitVersion convention
+#   breaking:  →  major
+#   feat:      →  minor
+#   fix:        →  patch
+#   [skip version]  →  no bump
+#   (anything else)    →  patch  (default)
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  bump:
+    # Tip: set bump-version/bump-app-version to false to leave that field unchanged.
+    uses: stratsys/.github-private/.github/workflows/bump-helm-chart-version.yml@main
+    with:
+      chart-path: 'helm'
+      bump-version: true
+      bump-app-version: true
+    secrets: inherit
