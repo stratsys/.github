@@ -1,6 +1,6 @@
 {
   "name": "Bump Helm Chart Version",
-  "description": "Bumps the version and/or appVersion fields in a Helm chart's Chart.yaml (with patch, minor, or major version increments supported for version), allows each field to be toggled independently, and commits the change back to the branch.",
-  "iconName": "octicon-package",
-  "categories": ["Helm", "Kubernetes", "Automation"]
+  "description": "Bumps the version and/or appVersion fields in a Helm chart's Chart.yaml and commits the change back to the branch.",
+  "iconName": "package",
+  "categories": ["CD", "Deployment", "Automation"]
 }
