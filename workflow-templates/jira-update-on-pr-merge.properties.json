@@ -1,0 +1,6 @@
+{
+  "name": "Update Jira on PR Merge",
+  "description": "Transitions a Jira issue to 'Ready for Release' when a pull request is merged and the PR is owned by a allowlisted team or member.",
+  "iconName": "octicon git-merge",
+  "categories": ["code-review", "Automation"]
+}

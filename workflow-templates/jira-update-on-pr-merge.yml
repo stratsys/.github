@@ -1,0 +1,10 @@
+name: Update Jira on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  update-jira:
+    uses: stratsys/.github-private/.github/workflows/jira-update-on-pr-merge.yml@main
+    secrets: inherit

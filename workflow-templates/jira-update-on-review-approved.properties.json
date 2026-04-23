@@ -1,0 +1,6 @@
+{
+  "name": "Update Jira on Review Approved",
+  "description": "Transitions a Jira issue to 'Ready for merge' when a PR is approved and the PR is owned by a allowlisted team or member.",
+  "iconName": "octicon check",
+  "categories": ["code-review", "Automation"]
+}

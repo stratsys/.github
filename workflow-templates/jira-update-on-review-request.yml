@@ -1,0 +1,10 @@
+name: Update Jira on Review Request
+
+on:
+  pull_request:
+    types: [review_requested]
+
+jobs:
+  update-jira:
+    uses: stratsys/.github-private/.github/workflows/jira-update-on-review-request.yml@main
+    secrets: inherit

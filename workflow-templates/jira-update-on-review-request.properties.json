@@ -1,0 +1,6 @@
+{
+  "name": "Update Jira on Review Request",
+  "description": "Transitions a Jira issue to 'Ready for review' when a PR review is requested for an allowlisted team or member.",
+  "iconName": "octicon code-review",
+  "categories": ["code-review", "Automation"]
+}

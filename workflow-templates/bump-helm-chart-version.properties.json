@@ -1,4 +1,6 @@
 {
   "name": "Bump Helm Chart Version",
-  "description": "Bumps the version and/or appVersion fields in a Helm chart's Chart.yaml and commits the change back to the branch."
+  "description": "Computes the next Helm chart version with GitVersion, writes it to both version and appVersion in Chart.yaml, commits the change, and creates a version tag in the repository.",
+  "iconName": "octicon versions",
+  "categories": ["Helm", "Automation", "deployment"]
 }
