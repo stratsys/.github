@@ -1,0 +1,10 @@
+name: Update Jira on Review Approved
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  update-jira:
+    uses: stratsys/.github-private/.github/workflows/jira-update-on-review-approved.yml@main
+    secrets: inherit

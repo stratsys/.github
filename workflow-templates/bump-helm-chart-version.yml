@@ -1,11 +1,17 @@
 name: Bump Helm Chart Version
 
-# Bump type is derived automatically from the commit message, following the GitVersion convention
-#   breaking:  →  major
-#   feat:      →  minor
-#   fix:        →  patch
-#   [skip version]  →  no bump
-#   (anything else)    →  patch  (default)
+# Version is computed by GitVersion from git history + commit messages, and
+# written to both `version` and `appVersion` in Chart.yaml.
+#
+# Requires a GitVersion.yml at the repo root. Use the recommended template:
+#   https://github.com/stratsys/.github-private/blob/main/templates/GitVersion.yml
+#
+# Commit message conventions (from that template):
+#   breaking: …     →  major
+#   feat: …         →  minor
+#   fix: …          →  patch
+#   anything else   →  patch (branch default)
+#   [skip version]  →  workflow exits early
 
 on:
   push:
@@ -15,10 +21,7 @@ on:
 
 jobs:
   bump:
-    # Tip: set bump-version/bump-app-version to false to leave that field unchanged.
     uses: stratsys/.github-private/.github/workflows/bump-helm-chart-version.yml@main
     with:
       chart-path: 'helm'
-      bump-version: true
-      bump-app-version: true
     secrets: inherit
